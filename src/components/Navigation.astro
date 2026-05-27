@@ -4,7 +4,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
 ---
 
 <header
-  class="border-b border-gray-200 sm:relative shadow-sm"
+  class="border-b border-gray-200 sm:relative shadow-sm main-navigation"
   x-data="{ expandSolutions: false, expandIndustries: false, expandResources: false, expandMobileNavigation: false }"
 >
   <nav
@@ -13,27 +13,26 @@ import MobileNavigation from "../components/MobileNavigation.astro";
     <Branding />
 
     <!-- mobile menu button -->
-    <div class="lg:hidden">
+    <div class="lg:hidden bg-[#FFCB00] hover:bg-[#F3C82C] rounded-lg p-2">
       <button
         class="flex items-center gap-2 cursor-pointer"
         @click="expandMobileNavigation = !expandMobileNavigation"
       >
-        <span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            class="size-5"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-          </svg>
-        </span>
-        <span>Menu</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          class="size-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+
+        <!-- <span>Menu</span> -->
       </button>
     </div>
 
