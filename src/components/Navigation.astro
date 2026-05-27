@@ -1,15 +1,356 @@
-<header>
-  <nav class="flex justify-between items-center p-4">
-    <div>logo</div>
-    <ul>
-      <li><a href="/">Solutions</a></li>
-      <li><a href="/about">Industries</a></li>
-    </ul>
-    <div>
-      <ul>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/contact-wuvatec">Contact Us</a></li>
+---
+import Branding from "../components/Branding.astro";
+import MobileNavigation from "../components/MobileNavigation.astro";
+---
+
+<header
+  class="border-b border-gray-200 sm:relative shadow-sm"
+  x-data="{ expandSolutions: false, expandIndustries: false, expandResources: false, expandMobileNavigation: false }"
+>
+  <nav
+    class="flex justify-between items-center p-5 lg:py-6 w-full lg:w-265 lg:mx-auto"
+  >
+    <Branding />
+
+    <!-- mobile menu button -->
+    <div class="lg:hidden">
+      <button
+        class="flex items-center gap-2 cursor-pointer"
+        @click="expandMobileNavigation = !expandMobileNavigation"
+      >
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+          </svg>
+        </span>
+        <span>Menu</span>
+      </button>
+    </div>
+
+    <MobileNavigation />
+    <!-- end mobile menu button -->
+
+    <div class="hidden lg:block">
+      <ul class="flex gap-10">
+        <li>
+          <button
+            class="flex gap-2 items-center cursor-pointer"
+            @click="expandSolutions = !expandSolutions"
+          >
+            <span>Solutions</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+              </svg>
+            </span>
+          </button>
+          <div
+            class="bg-white absolute left-0 right-0 top-17 shadow-lg z-10"
+            style="width: 100vw; left: 50%; transform: translateX(-50%);"
+            id="expandSolutions"
+            x-show="expandSolutions"
+            x-collapse
+            @click.away="expandSolutions = false"
+          >
+            <div class="w-265 mx-auto px-4 py-8 grid grid-cols-2 gap-12">
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Tourism Website Development
+                </a>
+                <div>
+                  <span>
+                    High-converting tourism websites built to increase direct
+                    bookings.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                  >SEO Services</a
+                >
+                <div>
+                  <span>
+                    Rank higher on Google and attract more travel bookings.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Direct Booking System
+                </a>
+                <div>
+                  <span>
+                    Manage website, social, and agent bookings from one
+                    centralized dashboard.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Website Redsign
+                </a>
+                <div>
+                  <span>
+                    Modernize your website to improve speed, trust, and
+                    conversions.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Digital Consulting
+                </a>
+                <div>
+                  <span>
+                    Discover what’s hurting conversions and get a clear growth
+                    strategy.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button
+            class="flex gap-2 items-center cursor-pointer"
+            @click="expandIndustries = !expandIndustries"
+          >
+            <span>Industries</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+              </svg>
+            </span>
+          </button>
+          <div
+            class="bg-white absolute left-0 right-0 top-17 shadow-lg z-10"
+            style="width: 100vw; left: 50%; transform: translateX(-50%);"
+            id="expandIndustries"
+            x-show="expandIndustries"
+            x-collapse
+            @click.away="expandIndustries = false"
+          >
+            <div class="w-265 mx-auto px-4 py-8 grid grid-cols-2 gap-12">
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Safari Lodges &amp; Eco Resorts
+                </a>
+                <div>
+                  <span>
+                    Luxury and sustainable accommodations targeting
+                    international travelers.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Tour Operators &amp; DMCs
+                </a>
+                <div>
+                  <span>
+                    Multi-day tours, safaris, cultural trips, and travel
+                    coordination services.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Agritourism &amp; Farm Stays
+                </a>
+                <div>
+                  <span>
+                    Farm tours, coffee trails, culinary tourism, and sustainable
+                    agriculture experiences.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Adventure &amp; Tour Companies
+                </a>
+                <div>
+                  <span>
+                    Hiking, kayaking, surfing, canopy walks, and outdoor
+                    experiences.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="hidden lg:block">
+      <ul class="flex gap-8">
+        <li>
+          <button
+            class="flex gap-2 items-center cursor-pointer"
+            @click="expandResources = !expandResources"
+          >
+            <span>Resources</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+              </svg>
+            </span>
+          </button>
+          <div
+            class="bg-white absolute left-0 right-0 top-17 shadow-lg z-10"
+            style="width: 100vw; left: 50%; transform: translateX(-50%);"
+            id="expandResources"
+            x-show="expandResources"
+            x-collapse
+            @click.away="expandResources = false"
+          >
+            <div class="w-265 mx-auto px-4 py-8 grid grid-cols-2 gap-12">
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  About Us
+                </a>
+                <div>
+                  <span>
+                    Learn about our mission to help African tourism brands grow
+                    online.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Case Studies
+                </a>
+                <div>
+                  <span>
+                    Real tourism website and SEO success stories from across
+                    Africa.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Blog
+                </a>
+                <div>
+                  <span>
+                    Actionable SEO, web design, and digital growth insights for
+                    tourism businesses.
+                  </span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="text-md hover:underline font-medium text-gray-900"
+                >
+                  Knowledge Base
+                </a>
+                <div>
+                  <span>
+                    Answers to questions about our process, SEO services, and
+                    booking platform integrations.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a class="flex items-center gap-2" href="/contact-wuvatec">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                ></path>
+              </svg>
+            </span>
+            <span>Support</span>
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
+  <!-- <section>announcement</section> -->
 </header>

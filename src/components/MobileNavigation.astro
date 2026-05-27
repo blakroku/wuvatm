@@ -1,0 +1,288 @@
+<section
+  class="lg:hidden bg-white absolute left-0 right-0 top-16 shadow-lg z-10 p-5 flex flex-col gap-3"
+  x-show="expandMobileNavigation"
+  @click.away="expandMobileNavigation = false"
+  x-collapse
+>
+  <div class="">
+    <ul class="flex flex-col gap-3">
+      <li>
+        <button
+          class="flex gap-2 items-center cursor-pointer"
+          @click="expandSolutions = !expandSolutions"
+        >
+          <span>Solutions</span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+            </svg>
+          </span>
+        </button>
+        <div
+          class="bg-white"
+          id="expandSolutions"
+          x-show="expandSolutions"
+          x-collapse
+          @click.away="expandSolutions = false"
+        >
+          <div class="px-4 py-4 flex flex-col gap-4">
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Tourism Website Development
+              </a>
+              <p class="text-sm text-gray-500">
+                High-converting tourism websites built to increase direct
+                bookings.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                SEO Services
+              </a>
+              <p class="text-sm text-gray-500">
+                Rank higher on Google and attract more travel bookings.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Direct Booking System
+              </a>
+              <p class="text-sm text-gray-500">
+                Manage website, social, and agent bookings from one centralized
+                dashboard.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Website Redesign
+              </a>
+              <p class="text-sm text-gray-500">
+                Modernize your website to improve speed, trust, and conversions.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Digital Consulting
+              </a>
+              <p class="text-sm text-gray-500">
+                Discover what's hurting conversions and get a clear growth
+                strategy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <button
+          class="flex gap-2 items-center cursor-pointer"
+          @click="expandIndustries = !expandIndustries"
+        >
+          <span>Industries</span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+            </svg>
+          </span>
+        </button>
+        <div
+          class="bg-white"
+          id="expandIndustries"
+          x-show="expandIndustries"
+          x-collapse
+          @click.away="expandIndustries = false"
+        >
+          <div class="px-4 py-4 flex flex-col gap-4">
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Safari Lodges &amp; Eco Resorts
+              </a>
+              <p class="text-sm text-gray-500">
+                Luxury and sustainable accommodations targeting international
+                travelers.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Tour Operators &amp; DMCs
+              </a>
+              <p class="text-sm text-gray-500">
+                Multi-day tours, safaris, cultural trips, and travel
+                coordination services.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Agritourism &amp; Farm Stays
+              </a>
+              <p class="text-sm text-gray-500">
+                Farm tours, coffee trails, culinary tourism, and sustainable
+                agriculture experiences.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Adventure &amp; Tour Companies
+              </a>
+              <p class="text-sm text-gray-500">
+                Hiking, kayaking, surfing, canopy walks, and outdoor
+                experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="">
+    <ul class="flex flex-col gap-3">
+      <li>
+        <button
+          class="flex gap-2 items-center cursor-pointer"
+          @click="expandResources = !expandResources"
+        >
+          <span>Resources</span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="3.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+            </svg>
+          </span>
+        </button>
+        <div
+          class="bg-white"
+          id="expandResources"
+          x-show="expandResources"
+          x-collapse
+          @click.away="expandResources = false"
+        >
+          <div class="px-4 py-4 flex flex-col gap-4">
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                About Us
+              </a>
+              <p class="text-sm text-gray-500">
+                Learn about our mission to help African tourism brands grow
+                online.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Case Studies
+              </a>
+              <p class="text-sm text-gray-500">
+                Real tourism website and SEO success stories from across Africa.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Blog
+              </a>
+              <p class="text-sm text-gray-500">
+                Actionable SEO, web design, and digital growth insights for
+                tourism businesses.
+              </p>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="text-md hover:underline font-medium text-gray-900"
+              >
+                Knowledge Base
+              </a>
+              <p class="text-sm text-gray-500">
+                Answers to questions about our process, SEO services, and
+                booking platform integrations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a class="flex items-center gap-2" href="/contact-wuvatec">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+              ></path>
+            </svg>
+          </span>
+          <span>Support</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
