@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 body {
-  /* font-family: 'Inter', sans-serif; */
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Figtree', sans-serif; */
 }
 
 .main-navigation {
