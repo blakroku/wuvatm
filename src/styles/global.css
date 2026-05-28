@@ -11,3 +11,14 @@ body {
   font-size: 15px;
   line-height: 23px;
 }
+
+.btn-small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.btn-large {
+  @apply bg-[#FFCB00] hover:bg-[#F3C82C] rounded-2xl px-14 py-5 text-black;
+}

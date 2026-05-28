@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import HeroImage from "../assets/hero-3.webp";
+---
+
+<section class="border-b border-gray-200">
+  <div
+    class="w-full lg:w-265 mx-auto px-8 lg:px-4 pt-22 pb-18 flex justify-between items-center gap-12 flex-col lg:flex-row"
+  >
+    <div class="w-full md:w-[50%]">
+      <h1 class="font-bold text-5xl">
+        Digital Growth Partner for Eco Tour Operators
+      </h1>
+      <div class="mt-8">
+        <span>
+          We help eco lodges, sustainable tour operators, and nature based
+          experiences attract more direct bookings through high performing
+          websites, SEO, and conversion focused digital marketing strategy
+        </span>
+      </div>
+      <div class="my-14">
+        <span>
+          <a href="#" class="btn-large">Get A Free Growth Audit</a>
+        </span>
+        <span class="block text-xs mt-8">
+          <span class="block">
+            We’ll review your website, SEO, and booking system
+          </span>
+          <span class="block">
+            Exclusively for eco tourism and sustainable travel brands.
+          </span>
+        </span>
+      </div>
+    </div>
+    <div class="w-[50%] hidden lg:block">
+      <Image src={HeroImage} alt="Hero Image" width={900} class="w-full" />
+    </div>
+  </div>
+</section>
