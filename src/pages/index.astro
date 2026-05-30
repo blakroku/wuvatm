@@ -1,46 +1,26 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
-import { Image } from "astro:assets";
-import Lead2 from "../assets/lead-2.png";
 import OurProcess from "../components/OurProcess.astro";
 import Testimonials from "../components/Testimonials.astro";
+import Solutions from "../components/Solutions.astro";
+import CaseStudies from "../components/CaseStudies.astro";
+import LeadCapture from "../components/LeadCapture.astro";
+import IndustryFocus from "../components/IndustryFocus.astro";
 ---
 
 <Layout>
   <Hero />
 
-  <section class="hidden">solutions</section>
+  <Solutions />
+
+  <IndustryFocus />
 
   <OurProcess />
 
   <Testimonials />
 
-  <section class="hidden">proof</section>
+  <CaseStudies />
 
-  <section class="py-22 text-white px-4 lg:px-0">
-    <div
-      class="w-full text-center lg:text-left lg:w-265 mx-auto bg-[#416642] rounded-2xl flex flex-col lg:flex-row items-center gap-10 px-10 py-16"
-    >
-      <div>
-        <h2 class="font-bold text-5xl">
-          Not Sure Why Your Website Isn't Converting?
-        </h2>
-        <div class="mt-8">
-          <span>
-            We'll audit your eco-tourism website and show you exactly what is
-            preventing more direct bookings.
-          </span>
-        </div>
-        <div class="mt-12">
-          <a class="btn-large" href="">Request Free Audit</a>
-        </div>
-      </div>
-      <div class="hidden lg:block">
-        <span>
-          <Image src={Lead2} alt="WuvaTM dashboard preview" width={1000} />
-        </span>
-      </div>
-    </div>
-  </section>
+  <LeadCapture />
 </Layout>
