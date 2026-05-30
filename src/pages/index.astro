@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import { Image } from "astro:assets";
 import Lead2 from "../assets/lead-2.png";
+import OurProcess from "../components/OurProcess.astro";
+import Testimonials from "../components/Testimonials.astro";
 ---
 
 <Layout>
@@ -10,69 +12,9 @@ import Lead2 from "../assets/lead-2.png";
 
   <section class="hidden">solutions</section>
 
-  <section class="py-32">
-    <section class="mb-18">
-      <div class="mb-2 text-center w-full lg:w-265 mx-auto">
-        <h2 class="text-3xl font-semibold">
-          A Clear Process for Increasing Direct Bookings
-        </h2>
-        <h3 class="mt-4 text-sm">
-          We don't guess. We start with data, then improve what matters most.
-        </h3>
-      </div>
-    </section>
-    <section class="mb-32 px-4 lg:px-0 bg-[#F3F5F4]">
-      <div class="w-full lg:w-265 mx-auto">
-        <div class="px-4">
-          <div class="grid grid-cols-2">
-            <div
-              class="flex flex-col gap-3 py-22 pr-10 border-r border-b border-white"
-            >
-              <h3 class="font-semibold text-lg text-foreground">
-                Audit & Diagnose
-              </h3>
-              <span class="text-muted-foreground text-sm leading-relaxed">
-                We analyze your website, SEO performance, and booking journey to
-                identify exactly where guests drop off.
-              </span>
-            </div>
+  <OurProcess />
 
-            <div class="flex flex-col gap-3 py-22 pl-10 border-b border-white">
-              <h3 class="font-semibold text-lg text-foreground">
-                Strategy & Prioritization
-              </h3>
-              <span class="text-muted-foreground text-sm leading-relaxed">
-                We map out the highest impact improvements, what will increase
-                bookings fastest.
-              </span>
-            </div>
-
-            <div class="flex flex-col gap-3 py-22 pr-10 border-r border-white">
-              <h3 class="font-semibold text-lg text-foreground">
-                Build or Optimize
-              </h3>
-              <span class="text-muted-foreground text-sm leading-relaxed">
-                We implement changes through design, SEO, or conversion
-                improvements depending on your needs.
-              </span>
-            </div>
-
-            <div class="flex flex-col gap-3 py-22 pl-10">
-              <h3 class="font-semibold text-lg text-foreground">
-                Improve Conversion
-              </h3>
-              <span class="text-muted-foreground text-sm leading-relaxed">
-                Your website becomes easier to trust, easier to find, and easier
-                to book.
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <section class="hidden">how we work</section>
+  <Testimonials />
 
   <section class="hidden">proof</section>
 
