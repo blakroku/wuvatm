@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 @import "tailwindcss";
 
 body {
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
   /* font-family: 'Figtree', sans-serif; */
+  font-family: "Bricolage Grotesque", sans-serif;
+  line-height: 24px;
+  @apply font-light text-[#220628] bg-[#F9F3EB];
 }
 
 .main-navigation {
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 23px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .btn-small {

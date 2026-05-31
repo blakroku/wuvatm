@@ -4,7 +4,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
 ---
 
 <header
-  class="sm:relative shadow-sm main-navigation"
+  class="fixed top-0 left-0 w-full z-50 bg-inherit"
   x-data="{ expandSolutions: false, expandIndustries: false, expandResources: false, expandMobileNavigation: false }"
 >
   <nav
@@ -72,7 +72,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
             @click.away="expandSolutions = false"
           >
             <div class="w-265 mx-auto px-4 py-8 grid grid-cols-2 gap-5">
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="solutions/high-converting-web-design-redesign"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -86,7 +86,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
                   </span>
                 </div>
               </div>
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="solutions/seo-organic-booking-growth"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -98,7 +98,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
                   </span>
                 </div>
               </div>
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="solutions/direct-booking-system"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -112,7 +112,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
                   </span>
                 </div>
               </div>
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="solutions/whatsapp-booking-automation"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -160,7 +160,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
             @click.away="expandIndustries = false"
           >
             <div class="w-265 mx-auto px-4 py-8 grid grid-cols-2 gap-5">
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="industries/safari-lodges-eco-resorts"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -174,7 +174,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
                   </span>
                 </div>
               </div>
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="industries/tour-operators-dmcs"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -188,7 +188,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
                   </span>
                 </div>
               </div>
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="industries/agritourism-farm-stays"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -202,7 +202,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
                   </span>
                 </div>
               </div>
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="industries/adventure-tour-companies"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -254,7 +254,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
             @click.away="expandResources = false"
           >
             <div class="w-265 mx-auto px-4 py-8 grid grid-cols-2 gap-5">
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="resources/about-us"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -268,7 +268,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
                   </span>
                 </div>
               </div>
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="resources/case-studies"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -282,7 +282,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
                   </span>
                 </div>
               </div>
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="resources/blog"
                   class="text-md hover:underline font-medium text-gray-900"
@@ -296,7 +296,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
                   </span>
                 </div>
               </div>
-              <div class="hover:bg-gray-100 p-3 rounded-lg">
+              <div class="hover:bg-[#F9F3EB] p-3 rounded-lg">
                 <a
                   href="resources/knowledge-base"
                   class="text-md hover:underline font-medium text-gray-900"
