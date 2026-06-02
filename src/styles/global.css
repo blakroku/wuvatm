@@ -19,10 +19,7 @@ body {
 }
 
 .btn-small {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 23px;
+   @apply bg-[#42FF87] hover:bg-[#014349] text-[#014349] hover:text-[#42FF87] rounded-2xl px-10 py-3 font-medium hover:transition-colors duration-300 hover:ease-in-out hover:border hover:border-[#42FF87];
 }
 
 .btn-large {

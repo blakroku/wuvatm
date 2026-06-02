@@ -1,4 +1,12 @@
-<section class="">
+---
+import Image from "astro/components/Image.astro";
+import solution1 from "../assets/solution1.webp";
+import solution2 from "../assets/solution2.webp";
+import solution3 from "../assets/solution3.webp";
+import solution4 from "../assets/solution4.webp";
+---
+
+<section class="pt-30 rounded-3xl bg-[#014349] text-white mb-30">
   <section class="px-4 lg:px-0">
     <div class="mb-2 w-full lg:w-265 mx-auto">
       <div class="w-full md:w-150">
@@ -13,7 +21,100 @@
       </div>
     </div>
   </section>
+
   <section class="px-4 lg:px-0 py-12">
-    <div class="w-full lg:w-265 mx-auto"></div>
+    <div class="w-full lg:w-265 mx-auto">
+      <!-- Row 1: image | content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-30">
+        <div class="order-1 md:order-1">
+          <Image src={solution1} alt="Solution 1" />
+        </div>
+        <div class="order-2 md:order-2">
+          <h3 class="text-sm uppercase tracking-widest mb-6">
+            High Converting Web Design & Redesign
+          </h3>
+          <div class="mb-4">
+            <p>
+              We create visually stunning and user-friendly websites that
+              captivate visitors and drive conversions. Our designs are
+              optimized for performance, ensuring fast load times and seamless
+              navigation.
+            </p>
+          </div>
+          <div class="mt-12">
+            <a class="btn-small" href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: content | image (BUT mobile must be image first) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-30">
+        <div class="order-2 md:order-1">
+          <h3 class="text-sm uppercase tracking-widest mb-6">
+            SEO & Organic Booking Growth
+          </h3>
+          <div class="mb-4">
+            <p>
+              Our SEO strategies are designed to boost your online visibility
+              and drive organic traffic to your website. We conduct thorough
+              keyword research, optimize on-page elements, and build
+              high-quality backlinks to improve your search engine rankings.
+            </p>
+          </div>
+          <div class="mt-12">
+            <a class="btn-small" href="">Learn More</a>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <Image src={solution2} alt="Solution 2" />
+        </div>
+      </div>
+
+      <!-- Row 3: image | content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-30">
+        <div class="order-1 md:order-1">
+          <Image src={solution3} alt="Solution 3" />
+        </div>
+        <div class="order-2 md:order-2">
+          <h3 class="text-sm uppercase tracking-widest mb-6">
+            Content Marketing & Social Media Strategy
+          </h3>
+          <div class="mb-4">
+            <p>
+              We develop compelling content that resonates with your target
+              audience and drives engagement across all social media platforms.
+              Our strategies focus on building a strong brand presence and
+              fostering meaningful connections with your customers.
+            </p>
+          </div>
+          <div class="mt-12">
+            <a class="btn-small" href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4: content | image -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="order-2 md:order-1">
+          <h3 class="text-sm uppercase tracking-widest mb-6">
+            Performance Analytics & Reporting
+          </h3>
+          <div class="mb-4">
+            <p>
+              We provide comprehensive analytics and reporting to help you
+              understand your performance and make data-driven decisions. Our
+              reports offer insights into key metrics, allowing you to optimize
+              your strategies and maximize your return on investment.
+            </p>
+          </div>
+          <div class="mt-12">
+            <a class="btn-small" href="">Learn More</a>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <Image src={solution4} alt="Solution 4" />
+        </div>
+      </div>
+    </div>
   </section>
 </section>
