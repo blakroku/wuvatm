@@ -13,7 +13,9 @@ import MobileNavigation from "../components/MobileNavigation.astro";
     <Branding />
 
     <!-- mobile menu button -->
-    <div class="lg:hidden bg-[#FFCB00] hover:bg-[#F3C82C] rounded-lg p-2">
+    <div
+      class="lg:hidden bg-[#42FF87] hover:bg-[#014349] hover:text-[#42FF87] rounded-lg p-2"
+    >
       <button
         class="flex items-center gap-2 cursor-pointer"
         @click="expandMobileNavigation = !expandMobileNavigation"
@@ -315,7 +317,7 @@ import MobileNavigation from "../components/MobileNavigation.astro";
         </li>
         <li>
           <a
-            class="flex items-center gap-2 border-2 border-[#FFCB00] text-black hover:bg-[#F3C82C] rounded-lg px-6 py-2"
+            class="flex items-center gap-2 border-2 border-[#42FF87] text-[#014349] hover:text-[#014349] hover:bg-[#42FF87] rounded-lg px-6 py-2"
             href="/contact-wuvatec"
           >
             <span>Support</span>

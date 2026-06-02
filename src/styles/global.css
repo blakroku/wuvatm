@@ -26,5 +26,5 @@ body {
 }
 
 .btn-large {
-  @apply bg-[#FFCB00] hover:bg-[#F3C82C] rounded-2xl px-14 py-5 font-medium text-black;
+  @apply bg-[#42FF87] hover:bg-[#014349] text-[#014349] hover:text-[#42FF87] rounded-2xl px-14 py-5 font-medium;
 }
