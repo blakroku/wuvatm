@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import pledge from "../assets/pledge.png";
+import Branding from "./Branding.astro";
+import BrandingFooter from "./BrandingFooter.astro";
 ---
 
 <footer class="bg-[#014349] text-white">
@@ -179,7 +181,8 @@ import pledge from "../assets/pledge.png";
       <div class="w-full lg:w-265 mx-auto px-4 py-10">
         <div class="flex gap-3 items-center">
           <div>
-            <Image src={pledge} alt="Wuva Logo" width={80} />
+            <!-- <Image src={pledge} alt="Wuva Logo" width={80} /> -->
+            <BrandingFooter />
           </div>
           <div>
             <p class="text-sm font-light">
