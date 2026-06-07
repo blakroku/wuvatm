@@ -3,6 +3,10 @@ import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 import GoogleAnalytics from "../components/analytics/google-analytics.astro";
+// Meta tags and title are set in each page's frontmatter for better SEO control
+const { title } = Astro.props;
+const { meta_description } = Astro.props;
+const { meta_keywords } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,23 +17,27 @@ import GoogleAnalytics from "../components/analytics/google-analytics.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={meta_description} />
+    <meta name="keywords" content={meta_keywords} />
     <title>
-      Own Your Customer Relationships &amp; Increase Direct Bookings | WuvaTM
+      {title} | Wuva Technology
     </title>
-    <style>
-      [x-cloak] {
-        display: none !important;
-      }
-    </style>
-    <!-- <GoogleAnalytics /> -->
   </head>
+
+  <!-- <GoogleAnalytics /> -->
+
   <body>
     <Navigation />
 
     <slot />
 
     <Footer />
-  </body><style>
+  </body>
+
+  <style>
+    [x-cloak] {
+      display: none !important;
+    }
     html,
     body {
       margin: 0;
