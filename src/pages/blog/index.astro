@@ -1,20 +1,24 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Hero from "../../layouts/Hero.astro";
 import OurProcess from "../../components/OurProcess.astro";
 import Testimonials from "../../components/Testimonials.astro";
 import Solutions from "../../components/Solutions.astro";
 import FrequentlyAskedQuestions from "../../components/FrequentlyAskedQuestions.astro";
 import LeadCapture from "../../components/LeadCapture.astro";
+import HeroImage from "../../assets/solution3.webp";
 ---
 
 <Layout>
-  <section>
-    <h3>
-      Find out about how our roots in Trampoline Park Industry lead to our
-      mission to help leisure & entertainment businesses turn guests into
-      members for life.
-    </h3>
-  </section>
+  <Hero
+    you_are_here="Blog"
+    hero_title="Blog"
+    hero_description="We help eco lodges, safari camps, sustainable tour operators, and
+          nature-based experiences turn more website visitors into paying guests
+          through conversion-focused websites, search visibility, and booking
+          automation."
+    hero_image={HeroImage}
+  />
 
   <Solutions />
 
